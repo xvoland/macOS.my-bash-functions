@@ -12,3 +12,7 @@ function _paste {
     echo -n $(echo ${OUTPUT}|tr -d '\n')
 }
 
+# Clipboard to HEX
+function _clp2hex {
+    pbpaste | base64 | pbcopy
+}
